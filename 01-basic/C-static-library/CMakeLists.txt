@@ -10,7 +10,7 @@ project(hello_library)
 add_library(hello_library STATIC src/Hello.cpp)
 
 target_include_directories(hello_library PUBLIC ${PROJECT_SOURCE_DIR}/include)  # 如果是PRIVATE main.cpp会include "static/Hello.h" 失败
-# 会变成include来源的根目录 
+# 会变成include来源的根目录
 
 
 ############################################################
